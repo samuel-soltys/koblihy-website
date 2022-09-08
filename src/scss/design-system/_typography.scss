@@ -1,0 +1,59 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+
+// Font Families
+.font-code { font-family: "Source Code Pro", sans-serif; }
+
+body, html {
+    @extend .font-code;
+}
+
+// Font weight modifiers
+.font-weight-200 { font-weight: 200; }
+.font-weight-300 { font-weight: 300; }
+.font-weight-400 { font-weight: 400; }
+.font-weight-500 { font-weight: 500; }
+.font-weight-600 { font-weight: 600; }
+.font-weight-700 { font-weight: 700; }
+.font-weight-800 { font-weight: 800; }
+.font-weight-900 { font-weight: 900; }
+
+// Font and style casing modifiers
+.font-uppercase { text-transform: uppercase; }
+.font-normal { font-style: normal; text-transform: none; }
+.font-italic { font-style: italic; }
+
+// Font size modifiers
+.font-xxl { font-size: 52px; }
+.font-xl { font-size: 48px; }
+.font-l { font-size: 32px; }
+.font-m { font-size: 20px; }
+.font-s { font-size: 16px; }
+.font-ss { font-size: 14px; }
+
+// Set default font styling
+a, p, li, span, label, button {
+    @extend .font-m;
+    @extend .font-weight-400;
+    @extend .font-code;
+    color: $text_primary;
+    text-decoration: none;
+    line-height: 160%;
+    strong { font-weight: inherit; }
+}
+
+// Style headings
+h1, h2, h3, h4, h5, h6 {
+    @extend .font-code;
+    @extend .font-weight-600;
+    color: $text_primary;
+    strong { @extend .font-weight-800; }
+}
+
+h1 { @extend .font-xxl; }
+h2 { @extend .font-xl; }
+h3 { @extend .font-l; }
+h4 { @extend .font-m; }
+h5 { @extend .font-s; }
+h6 { @extend .font-ss; }

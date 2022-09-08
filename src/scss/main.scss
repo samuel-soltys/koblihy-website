@@ -1,0 +1,19 @@
+// Import identity
+@import "design-system/css-reset";
+@import "design-system/colors";
+.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	img {
+		position: absolute;
+		width: 10vw;
+		height: auto;
+		transition: all 3s ease-in-out;
+	}
+	img:hover {
+		width: 600vw;
+	}
+}
