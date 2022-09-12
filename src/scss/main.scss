@@ -1,6 +1,8 @@
 // Import identity
 @import "design-system/css-reset";
 @import "design-system/colors";
+@import "design-system/typography";
+
 .loading {
 	display: flex;
 	justify-content: center;
@@ -15,5 +17,32 @@
 	}
 	img:hover {
 		width: 600vw;
+	}
+}
+
+.header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 80px;
+	width: 100%;
+	align-items: center;
+	height: 100px;
+	left: 0px;
+	top: 0px;
+	background: $brown;
+	padding-bottom: 5px;
+	box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 25px 25px;
+	.logo { height: 50%; }
+	.links {
+		display: flex; 
+		p {
+			@extend .font-weight-800;
+			font-size: 26px;
+			color: $text_secondary;
+			margin-left: 70px;
+			&:last-of-type() { margin-left: 0; }
+		}	
 	}
 }

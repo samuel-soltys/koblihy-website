@@ -3,10 +3,11 @@
 /* -------------------------------------------------------------------------- */
 
 // Font Families
-.font-code { font-family: "Source Code Pro", sans-serif; }
+// .font-hey-comic { font-family: "Hey Comic", sans-serif; }
+.font-comic-neue { font-family: "Comic Neue", sans-serif; }
 
 body, html {
-    @extend .font-code;
+    @extend .font-comic-neue;
 }
 
 // Font weight modifiers
@@ -36,7 +37,7 @@ body, html {
 a, p, li, span, label, button {
     @extend .font-m;
     @extend .font-weight-400;
-    @extend .font-code;
+    @extend .font-comic-neue;
     color: $text_primary;
     text-decoration: none;
     line-height: 160%;
@@ -45,7 +46,7 @@ a, p, li, span, label, button {
 
 // Style headings
 h1, h2, h3, h4, h5, h6 {
-    @extend .font-code;
+    @extend .font-comic-neue;
     @extend .font-weight-600;
     color: $text_primary;
     strong { @extend .font-weight-800; }
