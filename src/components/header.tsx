@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
     const [position, setPosition] = useState(0);
     const [visible, setVisible] = useState(false);
-    
+
     useEffect(() => {
         const handleScroll = () => {
             let moving = window.pageYOffset;
@@ -20,15 +21,36 @@ const Header = () => {
         };
     });
     const cls = visible ? "visible" : "hidden";
+    useEffect(() => {
+        setTimeout(() => {
+            setVisible(true);
+        }, 4300);
+    }, []);
     
+
+    const HeaderLink = ({ id, label }: { id: string; label: string }) => {
+        return (
+            <Link
+                activeClass="active"
+                to={id}
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={800}
+            >
+                <p>{label}</p>
+            </Link>
+        );
+    };
+
     return (
         <div className={"header " + cls}>
             <img src="logo.svg" className="logo" />
             <div className="links">
-                <p>Team</p>
-                <p>Games</p>
-                <p>Competition</p>
-                <p>Contact</p>
+                <HeaderLink id="team" label="Team" />
+                <HeaderLink id="games" label="Games" />
+                <HeaderLink id="competition" label="Competition" />
+                <HeaderLink id="contact" label="Contact" />
             </div>
         </div>
     );
