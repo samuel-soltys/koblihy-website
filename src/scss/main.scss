@@ -27,6 +27,7 @@
 	height: 100px;
 	left: 0px;
 	top: -100px;
+	z-index: 5;
 	background: $brown;
 	padding-bottom: 5px;
 	box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
@@ -46,5 +47,45 @@
 			margin-left: 70px;
 			&:last-of-type() { margin-left: 0; }
 		}	
+	}
+}
+
+.content { padding: 100px; }
+section { margin-bottom: 200px; }
+h1 { margin-bottom: 40px; }
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	p {
+		font-size: 32px;
+		width: 30ch;
+	}
+	.illustration { margin-right: -200px; }
+}
+
+.team {
+	.members {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 80px 60px;
+		.member {
+			text-align: center;
+			img {
+				border-radius: 100%;
+				width: 100%;
+			}
+			.name {
+				font-size: 38px;
+			}
+		}
+	}
+	.illustration {
+		position: absolute;
+		bottom: -1100px;
+		left: -250px;
+		transform: scale(0.8);
 	}
 }

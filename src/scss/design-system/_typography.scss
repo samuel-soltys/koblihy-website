@@ -31,7 +31,7 @@ body, html {
 .font-italic { font-style: italic; }
 
 // Font size modifiers
-.font-xxl { font-size: 52px; }
+.font-xxl { font-size: 64px; }
 .font-xl { font-size: 48px; }
 .font-l { font-size: 32px; }
 .font-m { font-size: 20px; }
@@ -52,7 +52,8 @@ a, p, li, span, label, button {
 // Style headings
 h1, h2, h3, h4, h5, h6 {
     @extend .font-hey-comic;
-    @extend .font-weight-600;
+    @extend .font-weight-200;
+    letter-spacing: 0.06em;
     color: $text_primary;
     strong { @extend .font-weight-800; }
 }
