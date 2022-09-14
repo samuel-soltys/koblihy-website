@@ -9,9 +9,9 @@ const Loading = () => {
             donut.current!.style.width = "600vw";
         }, 2200);
         setTimeout(() => {
-            document.getElementsByTagName("html")[0].style.overflow = "visible";
-			document.getElementsByTagName("body")[0].style.overflow = "visible";
-			document.getElementById("__next")!.style.overflow = "visible";
+            document.getElementsByTagName("html")[0].style.overflowY = "visible";
+			document.getElementsByTagName("body")[0].style.overflowY = "visible";
+			document.getElementById("__next")!.style.overflowY = "visible";
             loading.current!.style.display = "none";
         }, 4200);
     }, []);
