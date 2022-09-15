@@ -3,16 +3,11 @@ import Loading from "../components/loading";
 import Header from "../components/header";
 import "@fontsource/comic-neue";
 import { useEffect, useRef } from "react";
-import Member from "../components/member"
+import Member from "../components/member";
+import InfoBlock from "../components/infoblock";
 
 const Home: NextPage = () => {
     const hero = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        setTimeout(() => {
-            hero.current!.style.display = "flex";
-        }, 5000);
-    });
 
     return (
         <>
@@ -33,56 +28,71 @@ const Home: NextPage = () => {
                     </div>
                 </section>
                 <section className="team">
-					<h1>Our team</h1>
-					<div className="members">
-						<Member
-							name="Samuel Šoltys"
-							photo="samuel_soltys.jpg"
-							role="Game and web developer, graphic designer"
-							linkedin=""
-							github=""
-							web=""
-							instagram=""
-						/>
-						<Member
-							name="Theo Sirota"
-							photo="placeholder.svg"
-							role="Game developer"
-							linkedin=""
-							github=""
-							web=""
-							instagram=""
-						/>
-						<Member
-							name="Dominika Trudičová"
-							photo="placeholder.svg"
-							role="Idea maker, sound designer, graphic designer"
-							linkedin=""
-							github=""
-							web=""
-							instagram=""
-						/>
-						<br/>
-						<Member
-							name="Silvia Katlovská"
-							photo="placeholder.svg"
-							role="Sound designer, graphic designer"
-							linkedin=""
-							github=""
-							web=""
-							instagram=""
-						/>
-						<Member
-							name="Olvier Grega"
-							photo="placeholder.svg"
-							role="Game developer, graphic designer"
-							linkedin=""
-							github=""
-							web=""
-							instagram=""
-						/>
-					</div>
-					<img className="illustration" src="donut-bg.svg" />
+                    <h1>Our team</h1>
+                    <div className="members">
+                        <Member
+                            name="Samuel Šoltys"
+                            photo="samuel_soltys.jpg"
+                            role="Game and web developer, graphic designer"
+                            linkedin=""
+                            github=""
+                            web=""
+                            instagram=""
+                        />
+                        <Member
+                            name="Theo Sirota"
+                            photo="placeholder.svg"
+                            role="Game developer"
+                            linkedin=""
+                            github=""
+                            web=""
+                            instagram=""
+                        />
+                        <Member
+                            name="Dominika Trudičová"
+                            photo="placeholder.svg"
+                            role="Idea maker, sound designer, graphic designer"
+                            linkedin=""
+                            github=""
+                            web=""
+                            instagram=""
+                        />
+                        <br />
+                        <Member
+                            name="Silvia Katlovská"
+                            photo="placeholder.svg"
+                            role="Sound designer, graphic designer"
+                            linkedin=""
+                            github=""
+                            web=""
+                            instagram=""
+                        />
+                        <Member
+                            name="Oliver Grega"
+                            photo="placeholder.svg"
+                            role="Game developer, graphic designer"
+                            linkedin=""
+                            github=""
+                            web=""
+                            instagram=""
+                        />
+                    </div>
+                    <img className="illustration" src="donut-bg.svg" />
+                </section>
+                <section className="games">
+                    <h1>Games</h1>
+                    <InfoBlock
+                        headline="Bob musical adventures"
+                        text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
+                    />
+                    <InfoBlock
+                        headline="New game donut"
+                        text="This new game is coming soon as a game for competition Spongia 2022. STAY TUNED COMING SOON"
+                    />
+                </section>
+                <section>
+                    <h1>Contact</h1>
+                    <p>contact@donuts.dev Socials: Instagram LinkedIn</p>
                 </section>
             </div>
         </>
