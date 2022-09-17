@@ -89,8 +89,7 @@ h1 { margin-bottom: 40px; }
 		transform: scale(0.8);
 	}
 }
-
-.games {
+.background {
 	background-color: $brown;
 	border-radius: 50px;
 	box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
@@ -99,12 +98,13 @@ h1 { margin-bottom: 40px; }
 	width: calc(100% + 200px);
 	padding: 100px 100px 50px 100px;
 	margin-bottom: 150px;
-	.infoblock {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 80px;
-		align-items: center;
-		h2 { margin-bottom: 40px; }
-		margin-bottom: 100px;
-	}
 }
+.infoblock {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 80px;
+	align-items: center;
+	h2 { margin-bottom: 40px; }
+	margin-bottom: 100px;
+}
+.competitions { margin-bottom: 100px; }

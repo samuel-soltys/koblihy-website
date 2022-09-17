@@ -35,7 +35,7 @@ const Header = () => {
                 to={id}
                 spy={true}
                 smooth={true}
-                offset={-150}
+                offset={-100}
                 duration={800}
             >
                 <p>{label}</p>
@@ -49,7 +49,7 @@ const Header = () => {
             <div className="links">
                 <HeaderLink id="team" label="Team" />
                 <HeaderLink id="games" label="Games" />
-                <HeaderLink id="competition" label="Competition" />
+                <HeaderLink id="competitions" label="Competition" />
                 <HeaderLink id="contact" label="Contact" />
             </div>
         </div>

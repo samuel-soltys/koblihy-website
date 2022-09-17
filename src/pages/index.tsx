@@ -79,18 +79,27 @@ const Home: NextPage = () => {
                     </div>
                     <img className="illustration" src="donut-bg.svg" />
                 </section>
-                <section className="games">
-                    <h1>Games</h1>
-                    <InfoBlock
-                        headline="Bob musical adventures"
-                        text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
-                    />
-                    <InfoBlock
-                        headline="New game donut"
-                        text="This new game is coming soon as a game for competition Spongia 2022. STAY TUNED COMING SOON"
-                    />
-                </section>
-                <section>
+                <div className="background">
+                    <section className="games">
+                        <h1>Games</h1>
+                        <InfoBlock
+                            headline="Bob musical adventures"
+                            text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
+                        />
+                        <InfoBlock
+                            headline="New game donut"
+                            text="This new game is coming soon as a game for competition Spongia 2022. STAY TUNED COMING SOON"
+                        />
+                    </section>
+                    <section className="competitions">
+                        <h1>Competitions</h1>
+                        <InfoBlock
+                            headline="Špongia 2O21"
+                            text="A game development competition held in our school. We won 3rd place in the year 2020. We are also attending this years Spongia competition."
+                        />
+                    </section>
+                </div>
+                <section className="contact">
                     <h1>Contact</h1>
                     <p>contact@donuts.dev Socials: Instagram LinkedIn</p>
                 </section>
