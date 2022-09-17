@@ -85,6 +85,11 @@ const Home: NextPage = () => {
                         <InfoBlock
                             headline="Bob musical adventures"
                             text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
+                            button={
+                                <button>
+                                    Download game <i>Win</i>
+                                </button>
+                            }
                         />
                         <InfoBlock
                             headline="New game donut"
