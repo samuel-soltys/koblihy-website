@@ -4,12 +4,18 @@
 
 // Font Families
 @font-face {
-    font-family: 'Hey Comic';
-    src: local('Hey Comic'), url(/fonts/Hey-Comic.ttf) format('truetype');
+    font-family: "Hey Comic";
+    src: local("Hey Comic"), url(/fonts/Hey-Comic.ttf) format("truetype");
 }
 
-.font-hey-comic { font-family: "Hey Comic", sans-serif; }
-.font-comic-neue { font-family: "Comic Neue", sans-serif; }
+.font-hey-comic {
+    font-family: "Hey Comic", sans-serif;
+    letter-spacing: 0.06em;
+}
+.font-comic-neue {
+    font-family: "Comic Neue", sans-serif;
+    letter-spacing: 0.05em;
+}
 
 body, html {
     @extend .font-comic-neue;
@@ -53,7 +59,6 @@ a, p, li, span, label, button {
 h1, h2, h3, h4, h5, h6 {
     @extend .font-hey-comic;
     @extend .font-weight-200;
-    letter-spacing: 0.06em;
     color: $text_primary;
     strong { @extend .font-weight-800; }
 }
