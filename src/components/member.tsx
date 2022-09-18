@@ -15,11 +15,35 @@ const Member = ({
     github?: string;
     web?: string;
 }) => {
-    return <div className="member">
-        <img src={"/members/" + photo} alt={name} />
-        <p className="name">{name}</p>
-        <p className="role">{role}</p>
-    </div>;
+    return (
+        <div className="member">
+            <img src={"/members/" + photo} alt={name} className="photo" />
+            <div className="socials">
+                {instagram != null ? (
+                    <a href={instagram} className="instagram">
+                        <img src="/icons/instagram.svg" />
+                    </a>
+                ) : null}
+                {linkedin != null ? (
+                    <a href={linkedin} className="linkedin">
+                        <img src="/icons/linkedin.svg" />
+                    </a>
+                ) : null}
+                {github != null ? (
+                    <a href={github} className="github">
+                        <img src="/icons/github.svg" />
+                    </a>
+                ) : null}
+                {web != null ? (
+                    <a href={web} className="web">
+                        <img src="/icons/web.svg" />
+                    </a>
+                ) : null}
+            </div>
+            <p className="name">{name}</p>
+            <p className="role">{role}</p>
+        </div>
+    );
 };
 
 export default Member;

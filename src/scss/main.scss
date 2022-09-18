@@ -72,13 +72,51 @@ h1 { margin-bottom: 40px; }
 		grid-template-columns: repeat(3, 1fr);
 		gap: 80px 60px;
 		.member {
+			position: relative;
 			text-align: center;
-			img {
+			.photo {
 				border-radius: 100%;
 				width: 100%;
 			}
-			.name {
-				font-size: 38px;
+			.name { font-size: 38px; }
+			.socials {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				aspect-ratio: 1;
+				border-radius: 100%;
+				background: linear-gradient(-45deg, rgba(0, 0, 0, 0.55) 15%, rgba(0, 0, 0, 0) 70%);
+				img {
+					width: 40px;
+					height: 40px;
+				}
+				&:hover a { opacity: 1; }
+				a {
+					height: 40px;
+					opacity: 0;
+					transition: opacity 0.15s ease-in-out;
+				}
+				.instagram {
+                    position: absolute;
+                    top: 44%;
+                    left: 84%;
+                }
+                .linkedin {
+                    position: absolute;
+                    top: 60%;
+                    left: 80%;
+                }
+                .github {
+                    position: absolute;
+                    top: 75%;
+                    left: 70%;
+                }
+                .web {
+                    position: absolute;
+                    top: 84%;
+                    left: 55%;
+                }
 			}
 		}
 	}
