@@ -57,7 +57,7 @@ const Home: NextPage = () => {
                             web=""
                             instagram=""
                         />
-                        <br />
+                        <img className="illustration" src="donut-bg.svg" />
                         <Member
                             name="Silvia Katlovská"
                             photo="placeholder.svg"
@@ -77,7 +77,6 @@ const Home: NextPage = () => {
                             instagram=""
                         />
                     </div>
-                    <img className="illustration" src="donut-bg.svg" />
                 </section>
                 <div className="background">
                     <section className="games">
