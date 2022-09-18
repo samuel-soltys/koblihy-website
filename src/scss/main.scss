@@ -59,8 +59,8 @@ h1 { margin-bottom: 40px; }
 	align-items: center;
 	margin-top: 50px;
 	p {
-		font-size: 32px;
-		width: 30ch;
+		font-size: 28px;
+		width: 35ch;
 	}
 	.illustration { margin-right: -200px; }
 }
@@ -77,8 +77,12 @@ h1 { margin-bottom: 40px; }
 			.photo {
 				border-radius: 100%;
 				width: 100%;
+				opacity: 0.85;
 			}
-			.name { font-size: 38px; }
+			.name {
+				@extend .font-weight-600;
+				font-size: 32px;
+			}
 			.socials {
 				position: absolute;
 				top: 0;

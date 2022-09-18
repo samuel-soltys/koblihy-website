@@ -32,10 +32,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/comic-neue@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/comic-neue/-/comic-neue-4.5.9.tgz#1ed84024282fdfcdfa32332a8c8cf7aec8290df3"
-  integrity sha512-pYVYnVNOxbCM1+rlC7cvJuc8A19OiuT2bVvc8FaLB5aj/unMU9MBzRACG5WLMAThpiVm21K7dhdirce51p1nmA==
+"@fontsource/quicksand@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/quicksand/-/quicksand-4.5.10.tgz#717db225a61572c82a4860214dc7fe4938c6bc6a"
+  integrity sha512-LnSpCIw6vyn7isDxSO6A2HEU3+v/0Af9o2n1fAf1T3yr/CsyFNeby28u3tEmzKCzserFlp3iKuWvTagu3FJj2Q==
 
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"

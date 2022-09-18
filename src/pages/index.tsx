@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Loading from "../components/loading";
 import Header from "../components/header";
-import "@fontsource/comic-neue";
+import "@fontsource/quicksand";
 import { useEffect, useRef } from "react";
 import Member from "../components/member";
 import InfoBlock from "../components/infoblock";
