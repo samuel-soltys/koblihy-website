@@ -34,25 +34,24 @@ const Home: NextPage = () => {
                             name="Samuel Šoltys"
                             photo="samuel_soltys.jpg"
                             role="Game and web developer, graphic designer"
-                            linkedin=""
-                            github=""
-                            web=""
-                            instagram=""
+                            instagram="https://www.instagram.com/samuel_soltys/"
+                            linkedin="https://www.linkedin.com/in/samuel-soltys/"
+                            github="https://github.com/samuel-soltys"
+                            web="https://samuelsoltys.com"
                         />
                         <Member
                             name="Theo Sirota"
                             photo="placeholder.svg"
                             role="Game developer"
+                            instagram=""
                             linkedin=""
                             github=""
-                            instagram=""
                         />
                         <Member
                             name="Dominika Trudičová"
                             photo="placeholder.svg"
                             role="Idea maker, sound designer, graphic designer"
-                            linkedin=""
-                            instagram=""
+                            instagram="https://www.instagram.com/slady46/"
                         />
                         <img className="illustration" src="donut-bg.svg" />
                         <Member
@@ -65,9 +64,9 @@ const Home: NextPage = () => {
                             name="Oliver Grega"
                             photo="placeholder.svg"
                             role="Game developer, graphic designer"
+                            instagram=""
                             github=""
                             web=""
-                            instagram=""
                         />
                     </div>
                 </section>
