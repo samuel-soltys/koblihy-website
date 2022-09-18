@@ -45,7 +45,6 @@ const Home: NextPage = () => {
                             role="Game developer"
                             linkedin=""
                             github=""
-                            web=""
                             instagram=""
                         />
                         <Member
@@ -53,8 +52,6 @@ const Home: NextPage = () => {
                             photo="placeholder.svg"
                             role="Idea maker, sound designer, graphic designer"
                             linkedin=""
-                            github=""
-                            web=""
                             instagram=""
                         />
                         <img className="illustration" src="donut-bg.svg" />
@@ -62,16 +59,12 @@ const Home: NextPage = () => {
                             name="Silvia Katlovská"
                             photo="placeholder.svg"
                             role="Sound designer, graphic designer"
-                            linkedin=""
-                            github=""
-                            web=""
                             instagram=""
                         />
                         <Member
                             name="Oliver Grega"
                             photo="placeholder.svg"
                             role="Game developer, graphic designer"
-                            linkedin=""
                             github=""
                             web=""
                             instagram=""
