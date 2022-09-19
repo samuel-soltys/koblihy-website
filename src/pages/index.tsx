@@ -78,7 +78,7 @@ const Home: NextPage = () => {
                             text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
                             button={
                                 <button>
-                                    Download game <i>Win</i>
+                                    Download game <img src="/icons/windows.svg" />
                                 </button>
                             }
                         />
