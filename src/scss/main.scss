@@ -17,7 +17,7 @@ $animation_delay: 5s;
 
 .content { padding: 100px; }
 section { margin-bottom: 250px; }
-.hero { display: none; }
+
 .loading {
 	display: flex;
 	justify-content: center;
@@ -71,6 +71,7 @@ h1 { margin-bottom: 40px; }
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: 50px;
 	height: calc(100vh - 100px);
 	@extend .animation-element;
 	animation-delay: $animation_delay;

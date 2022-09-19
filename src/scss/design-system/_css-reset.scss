@@ -15,3 +15,11 @@ html,
     top: 0;
     overflow: hidden;
 }
+body {
+    display: flex;
+    justify-content: center;
+}
+#__next {
+    max-width: 1600px;
+    overflow: visible !important;
+}
