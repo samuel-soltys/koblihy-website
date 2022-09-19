@@ -7,7 +7,7 @@ const InfoBlock = ({
     headline: string;
     text: string;
     img?: string;
-    button?: JSX.IntrinsicElements["button"];
+    button?: JSX.IntrinsicElements["a"];
 }) => {
     return (
         <div className="infoblock">

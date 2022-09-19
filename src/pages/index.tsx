@@ -7,14 +7,12 @@ import Member from "../components/member";
 import InfoBlock from "../components/infoblock";
 
 const Home: NextPage = () => {
-    const hero = useRef<HTMLDivElement>(null);
-
     return (
         <>
             <Loading />
             <div className="content">
                 <Header />
-                <section className="hero" ref={hero}>
+                <section className="hero">
                     <div className="text">
                         <h1>We make games.</h1>
                         <p>
@@ -77,20 +75,21 @@ const Home: NextPage = () => {
                             headline="Bob musical adventures"
                             text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
                             button={
-                                <button>
-                                    Download game <img src="/icons/windows.svg" />
-                                </button>
+								<a href="#">
+									<span>Download game</span>
+									<img src="/icons/windows.svg" />
+								</a>
                             }
                         />
                         <InfoBlock
                             headline="New game donut"
-                            text="This new game is coming soon as a game for competition Spongia 2022. STAY TUNED COMING SOON"
+                            text="This new game is coming soon as a game for competition Špongia 2022. STAY TUNED COMING SOON"
                         />
                     </section>
                     <section className="competitions">
                         <h1>Competitions</h1>
                         <InfoBlock
-                            headline="Špongia 2O21"
+                            headline="Spongia 2O21"
                             text="A game development competition held in our school. We won 3rd place in the year 2020. We are also attending this years Spongia competition."
                         />
                     </section>
