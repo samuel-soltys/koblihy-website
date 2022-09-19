@@ -13,7 +13,7 @@ const Loading = () => {
 			document.getElementsByTagName("body")[0].style.overflowY = "visible";
 			document.getElementById("__next")!.style.overflowY = "visible";
             loading.current!.style.display = "none";
-        }, 4200);
+        }, 4500);
     }, []);
 
     return (
