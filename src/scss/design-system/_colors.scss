@@ -18,7 +18,7 @@ $brown: #E3B381;
 /* -------------------------------------------------------------------------- */
 
 ::-webkit-scrollbar { width: 0.3vw; }
-::-webkit-scrollbar-track { background: linear-gradient($accent_pink 50%,  $brown 50%, $brown 80%, $accent_pink 80%); }
+::-webkit-scrollbar-track { background: $accent_pink; }
 ::-webkit-scrollbar-thumb { background: $white; }
 
 /* -------------------------------------------------------------------------- */
@@ -30,5 +30,5 @@ html { background-color: $brown;}
 /* -------------------------------------------------------------------------- */
 /*                                   Selection                                */
 /* -------------------------------------------------------------------------- */
-::selection { background: $text_secondary; }
-::-moz-selection { background: $text_secondary; }
+::selection { background: rgba(0, 0, 0, 0.20); }
+::-moz-selection { background: rgba(0, 0, 0, 0.20); }

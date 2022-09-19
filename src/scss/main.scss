@@ -45,6 +45,7 @@ section { margin-bottom: 250px; }
 		p {
 			@extend .font-weight-800;
 			font-size: 26px;
+			cursor: pointer;
 			color: $text_secondary;
 			margin-left: 70px;
 			&:last-of-type() { margin-left: 0; }
