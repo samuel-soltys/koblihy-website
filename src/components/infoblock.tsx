@@ -16,7 +16,7 @@ const InfoBlock = ({
                 <p>{text}</p>
                 { button != null ? <>{button}</> : <></> }
             </div>
-            <img src="img-placeholder.svg" alt={headline} />
+            { img != null ? <img src={img} alt={headline} /> : <img src="img-placeholder.svg" />}
         </div>
     );
 };

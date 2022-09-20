@@ -172,5 +172,11 @@ h1 { margin-bottom: 40px; }
 		margin-top: 40px;
 		img { width: 40px; }
 	}
+	> img {
+        width: 100%;
+        border-radius: 20px;
+		opacity: 0.8;
+    }
 }
 .competitions { margin-bottom: 100px; }
+.contact { margin-bottom: 100px; }

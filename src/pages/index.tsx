@@ -75,28 +75,33 @@ const Home: NextPage = () => {
                             headline="Bob musical adventures"
                             text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
                             button={
-								<a href="#">
-									<span>Download game</span>
-									<img src="/icons/windows.svg" />
-								</a>
+                                <a href="#">
+                                    <span>Download game</span>
+                                    <img src="/icons/windows.svg" />
+                                </a>
                             }
-                        />
-                        <InfoBlock
-                            headline="New game donut"
-                            text="This new game is coming soon as a game for competition Špongia 2022. STAY TUNED COMING SOON"
+                            img="/bob-musical-adventures-screen.png"
                         />
                     </section>
                     <section className="competitions">
                         <h1>Competitions</h1>
                         <InfoBlock
                             headline="Spongia 2O21"
-                            text="A game development competition held in our school. We won 3rd place in the year 2020. We are also attending this years Spongia competition."
+                            text="A game development competition, held in our school in Bratislava (School for Exceptionally Gifted Children). We won 3rd place in the year 2020. We are also attending this year's Spongia competition. Stay tuned for a new game!"
                         />
                     </section>
                 </div>
                 <section className="contact">
                     <h1>Contact</h1>
-                    <p>contact@donuts.dev Socials: Instagram LinkedIn</p>
+					<p>You can contact us by email:</p>
+                    <p>contact@donuts.dev</p>
+					<p>Also check out our social medias</p>
+					<a href="https://instagram.com/" target="_blank" >
+                        <img src="/icons/instagram.svg" />
+                    </a>
+					<a href="https://linkedin.com/" target="_blank" >
+                        <img src="/icons/linkedin.svg" />
+                    </a>
                 </section>
             </div>
         </>
