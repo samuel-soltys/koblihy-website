@@ -1,7 +1,12 @@
 // Import identity
-@import "design-system/css-reset";
+@import "design-system/css-setup";
 @import "design-system/colors";
 @import "design-system/typography";
+
+// Components
+@import "components/header";
+@import "components/loading";
+@import "components/infoblock";
 
 $animation_delay: 5s;
 @keyframes opacity {
@@ -17,54 +22,6 @@ $animation_delay: 5s;
 
 .content { padding: 100px; }
 section { margin-bottom: 250px; }
-
-.loading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	overflow: hidden;
-	img {
-		position: absolute;
-		width: 10vw;
-		height: auto;
-		transition: all 3s ease-in-out, width 2s cubic-bezier(.73,0,.83,.18);
-	}
-}
-
-.header {
-	position: fixed;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 80px;
-	width: 100%;
-	align-items: center;
-	height: 100px;
-	left: 0px;
-	top: -100px;
-	z-index: 5;
-	background: $brown;
-	padding-bottom: 5px;
-	box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 25px 25px;
-	
-	transition: top 0.7s ease-out;
-	&.visible { top: 0; }
-    &.hidden { top: -100px; }
-	
-	.logo { height: 50%; }
-	.links {
-		display: flex; 
-		p {
-			@extend .font-weight-800;
-			font-size: 26px;
-			cursor: pointer;
-			color: $text_secondary;
-			margin-left: 70px;
-			&:last-of-type() { margin-left: 0; }
-		}	
-	}
-}
 
 h1 { margin-bottom: 40px; }
 .hero {
@@ -155,28 +112,4 @@ h1 { margin-bottom: 40px; }
 	padding: 100px 100px 50px 100px;
 	margin-bottom: 150px;
 }
-.infoblock {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 80px;
-	align-items: center;
-	h2 { margin-bottom: 40px; }
-	margin-bottom: 100px;
-	a {
-		display: inline-flex;
-		align-items: center;
-		column-gap: 15px;
-		padding: 10px 30px;
-		background: rgba(0, 0, 0, 0.15);
-		border-radius: 15px;
-		margin-top: 40px;
-		img { width: 40px; }
-	}
-	> img {
-        width: 100%;
-        border-radius: 20px;
-		opacity: 0.8;
-    }
-}
-.competitions { margin-bottom: 100px; }
-.contact { margin-bottom: 100px; }
+.competitions, .contact  { margin-bottom: 100px; }

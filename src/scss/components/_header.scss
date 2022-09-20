@@ -1,0 +1,33 @@
+.header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 80px;
+	width: 100%;
+	align-items: center;
+	height: 100px;
+	left: 0px;
+	top: -100px;
+	z-index: 5;
+	background: $brown;
+	padding-bottom: 5px;
+	box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 25px 25px;
+	
+	transition: top 0.7s ease-out;
+	&.visible { top: 0; }
+    &.hidden { top: -100px; }
+	
+	.logo { height: 50%; }
+	.links {
+		display: flex; 
+		p {
+			@extend .font-weight-800;
+			font-size: 26px;
+			cursor: pointer;
+			color: $text_secondary;
+			margin-left: 70px;
+			&:last-of-type() { margin-left: 0; }
+		}	
+	}
+}

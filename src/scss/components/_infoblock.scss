@@ -1,0 +1,23 @@
+.infoblock {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 80px;
+	align-items: center;
+	h2 { margin-bottom: 40px; }
+	margin-bottom: 100px;
+	a {
+		display: inline-flex;
+		align-items: center;
+		column-gap: 15px;
+		padding: 10px 30px;
+		background: rgba(0, 0, 0, 0.15);
+		border-radius: 15px;
+		margin-top: 40px;
+		img { width: 40px; }
+	}
+	> img {
+        width: 100%;
+        border-radius: 20px;
+		opacity: 0.8;
+    }
+}

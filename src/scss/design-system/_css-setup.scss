@@ -23,3 +23,9 @@ body {
     max-width: 1600px;
     overflow: visible !important;
 }
+
+// Breakpoints
+$breakpoint-desktop: 1920px;
+$breakpoint-desktop-small: 1440px;
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 768px;
