@@ -75,7 +75,7 @@ const Home: NextPage = () => {
                             headline="Bob musical adventures"
                             text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
                             button={
-                                <a href="#">
+                                <a href="https://drive.google.com/drive/u/0/folders/1wbkm36IIZ5Osd9qkIYSDuHy-YBZM7PM3" target="_blank">
                                     <span>Download game</span>
                                     <img src="/icons/windows.svg" />
                                 </a>
