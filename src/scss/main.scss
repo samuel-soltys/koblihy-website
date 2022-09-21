@@ -23,15 +23,18 @@ $animation_delay: 5s;
 .content { padding: 100px; }
 section { margin-bottom: 250px; }
 
-h1 { margin-bottom: 40px; }
 .hero {
+	// Animation
+	@extend .animation-element;
+	animation-delay: $animation_delay;
+
+	// Self
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	column-gap: 50px;
 	height: calc(100vh - 100px);
-	@extend .animation-element;
-	animation-delay: $animation_delay;
+
 	p {
 		font-size: 28px;
 		width: 35ch;
@@ -41,10 +44,12 @@ h1 { margin-bottom: 40px; }
 
 .team {
 	.members {
-		position: relative;
+		// Self
 		display: grid;
+		position: relative;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 80px 60px;
+
 		.member {
 			position: relative;
 			text-align: center;
@@ -69,13 +74,16 @@ h1 { margin-bottom: 40px; }
 					width: 40px;
 					height: 40px;
 				}
-				&:hover a { opacity: 1; }
+				
+				// Socials
 				a {
                     position: absolute;
 					height: 40px;
 					opacity: 0;
 					transition: opacity 0.15s ease-in-out;
 				}
+				&:hover a { opacity: 1; }
+				
 				a:nth-of-type(1) {
                     top: 44%;
                     left: 84%;
@@ -96,20 +104,20 @@ h1 { margin-bottom: 40px; }
 		}
 	}
 	.illustration {
-		transform: scale(1.4);
 		width: 100%;
 		padding-top: 50px;
 		margin-left: -200px;
+		transform: scale(1.4);
 	}
 }
 .background {
-	background-color: $brown;
-	border-radius: 50px;
-	box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
 	position: relative;
 	left: -100px;
 	width: calc(100% + 200px);
-	padding: 100px 100px 50px 100px;
 	margin-bottom: 150px;
+	border-radius: 50px;
+	padding: 100px 100px 50px 100px;
+	background-color: $brown;
+	box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
 }
 .competitions, .contact  { margin-bottom: 100px; }

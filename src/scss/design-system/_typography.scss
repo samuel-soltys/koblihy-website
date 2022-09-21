@@ -63,7 +63,10 @@ h1, h2, h3, h4, h5, h6 {
     strong { @extend .font-weight-800; }
 }
 
-h1 { @extend .font-xxl; }
+h1 {
+    @extend .font-xxl;
+    margin-bottom: 40px;
+}
 h2 { @extend .font-xl; }
 h3 { @extend .font-l; }
 h4 { @extend .font-m; }
