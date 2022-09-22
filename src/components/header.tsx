@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import useWindowDimensions from "../useWindowDimenstions";
 
 const Header = () => {
     const [position, setPosition] = useState(0);
@@ -25,15 +26,20 @@ const Header = () => {
         };
     });
     const cls = visible ? "visible" : "hidden";
-    useEffect(() => {
-        setTimeout(() => {
-            setVisible(true);
-            if (window.innerWidth < 1024) {
+    if(typeof window !== "undefined") {
+        const { height, width } = useWindowDimensions();
+        useEffect(() => {
+            setTimeout(() => {
+                setVisible(true);
                 const mobileoverlay = document.getElementsByClassName("mobile-overlay")[0] as HTMLDivElement;
-                mobileoverlay.style.display = "grid";
-            }
-        }, 4300);
-    }, []);
+                if (width < 1024) {
+                    mobileoverlay.style.display = "grid";
+                } else {
+                    mobileoverlay.style.display = "none";
+                }
+            }, 4300);
+        }, [])
+    }
 
     const HeaderLink = ({ id, label }: { id: string; label: string }) => {
         return (
