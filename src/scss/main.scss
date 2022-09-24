@@ -76,7 +76,7 @@ section { margin-bottom: 15vw; }
 		display: grid;
 		position: relative;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 80px 60px;
+		gap: 80px 5vw;
 
 		.member {
 			position: relative;
@@ -88,8 +88,9 @@ section { margin-bottom: 15vw; }
 			}
 			.name {
 				@extend .font-weight-600;
-				font-size: 32px;
+				@extend .font-l;
 			}
+			.role { @extend .font-s }
 			.socials {
 				position: absolute;
 				top: 0;
@@ -99,36 +100,90 @@ section { margin-bottom: 15vw; }
 				border-radius: 100%;
 				background: linear-gradient(-45deg, rgba(0, 0, 0, 0.55) 15%, rgba(0, 0, 0, 0) 70%);
 				img {
-					width: 40px;
-					height: 40px;
+					width: clamp(25px, 3vw, 42px);
+					height: clamp(25px, 3vw, 42px);
 				}
 				
 				// Socials
 				a {
                     position: absolute;
-					height: 40px;
+					height: clamp(25px, 3vw, 42px);
 					opacity: 0;
 					transition: opacity 0.15s ease-in-out;
 				}
 				&:hover a { opacity: 1; }
 				
 				a:nth-of-type(1) {
-                    top: 44%;
-                    left: 84%;
+                    top: calc(50% - clamp(12.5px, 1.5vw, 21px));
+                    left: calc(90% - clamp(12.5px, 1.5vw, 21px));
                 }
 				a:nth-of-type(2) {
-                    top: 60%;
-                    left: 80%;
+                    top: calc(66% - clamp(12.5px, 1.5vw, 21px));
+                    left: calc(86% - clamp(12.5px, 1.5vw, 21px));
                 }
 				a:nth-of-type(3) {
-                    top: 75%;
-                    left: 70%;
+                    top: calc(81% - clamp(12.5px, 1.5vw, 21px));
+                    left: calc(76% - clamp(12.5px, 1.5vw, 21px));
                 }
 				a:nth-of-type(4) {
-                    top: 84%;
-                    left: 55%;
+                    top: calc(90% - clamp(12.5px, 1.5vw, 21px));
+                    left: calc(61% - clamp(12.5px, 1.5vw, 21px));
                 }
+				
+				@media only screen and (max-width: $breakpoint-mobile) {
+					img {
+						width: 4.5vw;
+						height: 4.5vw;
+					}
+					a {
+						height: 4.5vw;
+					}
+					a:nth-of-type(1) {
+						top: calc(50% - 2.25vw);
+						left: calc(90% - 2.25vw);
+					}
+					a:nth-of-type(2) {
+						top: calc(66% - 2.25vw);
+						left: calc(86% - 2.25vw);
+					}
+					a:nth-of-type(3) {
+						top: calc(81% - 2.25vw);
+						left: calc(76% - 2.25vw);
+					}
+					a:nth-of-type(4) {
+						top: calc(90% - 2.25vw);
+						left: calc(61% - 2.25vw);
+					}
+				}
+				@media only screen and (max-width: 480px) {
+					a:nth-of-type(1) {
+						top: calc(50% - 3vw);
+						left: calc(90% - 3vw);
+					}
+					a:nth-of-type(2) {
+						top: calc(66% - 3vw);
+						left: calc(86% - 3vw);
+					}
+					a:nth-of-type(3) {
+						top: calc(81% - 3vw);
+						left: calc(76% - 3vw);
+					}
+					a:nth-of-type(4) {
+						top: calc(90% - 3vw);
+						left: calc(61% - 3vw);
+					}
+				}
 			}
+		}
+		@media only screen and (max-width: $breakpoint-desktop-small) {
+			gap: 60px 3vw;
+		}
+		@media only screen and (max-width: $breakpoint-tablet) {
+			gap: 40px 2vw;
+		}
+		@media only screen and (max-width: $breakpoint-mobile) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 40px 3vw;
 		}
 	}
 	.illustration {
@@ -136,6 +191,14 @@ section { margin-bottom: 15vw; }
 		padding-top: 50px;
 		margin-left: -200px;
 		transform: scale(1.4);
+		@media only screen and (max-width: $breakpoint-tablet) {
+			margin-left: -100px;
+		}
+		@media only screen and (max-width: $breakpoint-mobile) {
+			margin: 0;
+			padding-top: 30px;
+			transform: scale(1.4) translateX(10vw);
+		}
 	}
 }
 .background {
