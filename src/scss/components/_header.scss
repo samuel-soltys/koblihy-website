@@ -73,9 +73,7 @@
 	border-radius: 0px 0px 25px 25px;
     justify-items: center;
     align-items: center;
-
     &.toggle { top: 0px; }
-
 	a {
 		cursor: pointer;
 		p {
@@ -91,4 +89,9 @@
 		.mobile-menu { display: block; }
         .links { display: none; }
 	}
+}
+@media only screen and (max-width: $breakpoint-mobile) {
+	.header { height: 80px;}
+	.mobile-overlay { top: calc(-100vh + 80px); }
+	.header, .mobile-overlay { box-shadow: inset 0px -7px 0px rgba(0, 0, 0, 0.2); }
 }
