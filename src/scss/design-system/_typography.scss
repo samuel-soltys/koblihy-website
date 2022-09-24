@@ -12,13 +12,13 @@
     font-family: "Hey Comic", sans-serif;
     letter-spacing: 0.06em;
 }
-.font-comic-neue {
+.font-quicksand {
     font-family: "Quicksand", sans-serif;
     letter-spacing: 0.04em;
 }
 
 body, html {
-    @extend .font-comic-neue;
+    @extend .font-quicksand;
 }
 
 // Font weight modifiers
@@ -48,7 +48,7 @@ body, html {
 a, p, li, span, label, button {
     @extend .font-m;
     @extend .font-weight-400;
-    @extend .font-comic-neue;
+    @extend .font-quicksand;
     color: $text_primary;
     text-decoration: none;
     line-height: 160%;
@@ -93,7 +93,7 @@ h6 { @extend .font-ss; }
 @media only screen and (max-width: $breakpoint-mobile) {
     .font-xxl { font-size: 44px; }
     .font-xl { font-size: 30px; }
-    .font-l { font-size: 18px; }
+    .font-l { font-size: 20px; }
     .font-m { font-size: 16px; }
     .font-s { font-size: 14px; }
     .font-ss { font-size: 12px; }
