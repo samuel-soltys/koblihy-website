@@ -22,8 +22,9 @@ $animation_delay: 5s;
 
 .content { padding: 100px; }
 @media only screen and (max-width: $breakpoint-tablet) { .content { padding: 50px; } }
+@media only screen and (max-width: 480px) { .content { padding: 25px; } }
 
-section { margin-bottom: 250px; }
+section { margin-bottom: 15vw; }
 
 .hero {
 	// Animation
@@ -54,6 +55,19 @@ section { margin-bottom: 250px; }
 		p { font-size: 20px; }
 		.illustration img { width: 90%; }
 	}
+	@media only screen and (max-width: $breakpoint-mobile) {
+		display: block;
+		padding-top: 100px;
+		p { width: 100%; font-size: 18px; }
+		height: auto;
+		.illustration {
+            display: flex;
+            justify-content: flex-end;
+            margin: 25px -100px 0 50px;
+            img { width: 80%; }
+        }
+	}
+	
 }
 
 .team {

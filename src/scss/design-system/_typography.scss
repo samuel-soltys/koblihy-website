@@ -40,9 +40,9 @@ body, html {
 .font-xxl { font-size: 64px; }
 .font-xl { font-size: 48px; }
 .font-l { font-size: 32px; }
-.font-m { font-size: 20px; }
-.font-s { font-size: 18px; }
-.font-ss { font-size: 16px; }
+.font-m { font-size: 26px; }
+.font-s { font-size: 20px; }
+.font-ss { font-size: 18px; }
 
 // Set default font styling
 a, p, li, span, label, button {
@@ -75,8 +75,30 @@ h6 { @extend .font-ss; }
 
 @media only screen and (max-width: $breakpoint-desktop-small) {
     .font-xxl { font-size: 54px; }
+    .font-xl { font-size: 40px; }
+    .font-l { font-size: 26px; }
+    .font-m { font-size: 22px; }
+    .font-s { font-size: 18px; }
+    .font-ss { font-size: 16px; }
 }
 @media only screen and (max-width: $breakpoint-tablet) {
-    .font-xxl { font-size: 42px; }
+    .font-xxl { font-size: 46px; }
+    .font-xl { font-size: 36px; }
+    .font-l { font-size: 22px; }
+    .font-m { font-size: 18px; }
+    .font-s { font-size: 16px; }
+    .font-ss { font-size: 14px; }
     h1 { margin-bottom: 20px; }
+}
+@media only screen and (max-width: $breakpoint-mobile) {
+    .font-xxl { font-size: 44px; }
+    .font-xl { font-size: 30px; }
+    .font-l { font-size: 18px; }
+    .font-m { font-size: 16px; }
+    .font-s { font-size: 14px; }
+    .font-ss { font-size: 12px; }
+}
+
+@media only screen and (max-width: 480px) {
+    .font-xxl { font-size: 38px; }
 }
