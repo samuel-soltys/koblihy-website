@@ -21,4 +21,18 @@
         border-radius: 20px;
 		opacity: 0.8;
     }
+	@media only screen and (max-width: $breakpoint-tablet) {
+		h2 { margin-bottom: 20px; }
+		a { padding: 7px 25px; }
+	}
+	@media only screen and (max-width: $breakpoint-mobile) {
+		display: flex;
+		flex-direction: column;
+		a { margin-top: 10px; }
+		h2 { margin-bottom: 10px; }
+		> img {
+			margin-top: 50px;
+			width: 100%;
+		}
+	}
 }
