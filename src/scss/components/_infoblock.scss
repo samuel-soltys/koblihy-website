@@ -23,12 +23,19 @@
     }
 	@media only screen and (max-width: $breakpoint-tablet) {
 		h2 { margin-bottom: 20px; }
-		a { padding: 7px 25px; }
+		a {
+			padding: 7px 25px;
+			img { width: 35px; }
+		}
 	}
 	@media only screen and (max-width: $breakpoint-mobile) {
 		display: flex;
 		flex-direction: column;
-		a { margin-top: 10px; }
+		a {
+			margin-top: 10px;
+			column-gap: 10px;
+			img { width: 30px; }
+		}
 		h2 { margin-bottom: 10px; }
 		> img {
 			margin-top: 50px;
