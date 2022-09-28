@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                             name="Silvia Katlovská"
                             photo="silvia_katlovska.jpg"
                             role="Graphic designer, sound designer"
-                            instagram=""
+                            instagram="https://www.instagram.com/sisa_kat/"
                         />
                         <Member
                             name="Oliver Grega"
