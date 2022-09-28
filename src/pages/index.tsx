@@ -75,7 +75,10 @@ const Home: NextPage = () => {
                             headline="Bob musical adventures"
                             text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
                             button={
-                                <a href="https://drive.google.com/drive/u/0/folders/1wbkm36IIZ5Osd9qkIYSDuHy-YBZM7PM3" target="_blank">
+                                <a
+                                    href="https://drive.google.com/drive/u/0/folders/1wbkm36IIZ5Osd9qkIYSDuHy-YBZM7PM3"
+                                    target="_blank"
+                                >
                                     <span>Download game</span>
                                     <img src="/icons/windows.svg" />
                                 </a>
@@ -93,15 +96,17 @@ const Home: NextPage = () => {
                 </div>
                 <section className="contact">
                     <h1>Contact</h1>
-					<p>You can contact us by email:</p>
+                    <p>You can contact us by email:</p>
                     <p>contact@donuts.dev</p>
-					<p>Also check out our social medias</p>
-					<a href="https://instagram.com/" target="_blank" >
-                        <img src="/icons/instagram.svg" />
-                    </a>
-					<a href="https://linkedin.com/" target="_blank" >
-                        <img src="/icons/linkedin.svg" />
-                    </a>
+                    <p>Also check out our social medias</p>
+                    <div className="socials">
+                        <a href="https://www.instagram.com/koblihy.sk/" target="_blank">
+                            <img src="/icons/instagram.svg" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/koblihy" target="_blank">
+                            <img src="/icons/linkedin.svg" />
+                        </a>
+                    </div>
                 </section>
             </div>
         </>
