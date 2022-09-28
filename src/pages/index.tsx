@@ -39,32 +39,27 @@ const Home: NextPage = () => {
                         />
                         <Member
                             name="Theo Sirota"
-                            photo="placeholder.svg"
+                            photo="theo_sirota.jpg"
                             role="Game developer"
-                            instagram=""
-                            linkedin=""
-                            github=""
+                            instagram="https://www.instagram.com/theo_sirota"
                         />
                         <Member
                             name="Dominika Trudičová"
                             photo="placeholder.svg"
-                            role="Idea maker, sound designer, graphic designer"
+                            role="Sound designer, graphic designer"
                             instagram="https://www.instagram.com/slady46/"
                         />
                         <img className="illustration" src="donut-bg.svg" />
                         <Member
                             name="Silvia Katlovská"
-                            photo="placeholder.svg"
-                            role="Sound designer, graphic designer"
+                            photo="silvia_katlovska.jpg"
+                            role="Graphic designer, sound designer"
                             instagram=""
                         />
                         <Member
                             name="Oliver Grega"
-                            photo="placeholder.svg"
+                            photo="oliver_grega.jpg"
                             role="Game developer, graphic designer"
-                            instagram=""
-                            github=""
-                            web=""
                         />
                     </div>
                 </section>
