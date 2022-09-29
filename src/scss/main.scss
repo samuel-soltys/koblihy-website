@@ -213,7 +213,15 @@ section { margin-bottom: 15vw; }
 }
 .competitions, .contact  { margin-bottom: 100px; }
 
-.contact .socials {
-	margin-top: 20px;
-	a { margin-right: 20px;  }
+.contact {
+    a {
+        text-decoration: underline;
+        text-underline-offset: 0.12em;
+    }
+    .socials {
+        margin-top: 20px;
+        a {
+            margin-right: 20px;
+        }
+    }
 }

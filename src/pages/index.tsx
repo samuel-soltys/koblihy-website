@@ -71,7 +71,7 @@ const Home: NextPage = () => {
                     <section className="games">
                         <h1>Games</h1>
                         <InfoBlock
-                            headline="Bob musical adventures"
+                            headline="Bob’s musical donut adventures"
                             text={
                                 <p>
                                     A side-scrolling game with pretty parallax
@@ -112,9 +112,9 @@ const Home: NextPage = () => {
                                     </a>
                                     , held in our school in Bratislava (School
                                     for Exceptionally Gifted Children). We won
-                                    3rd place in the year 2020. We are also
-                                    attending this year&apos;s Spongia
-                                    competition. Stay tuned for a new game!
+                                    3rd place in the year 2021. We are also
+                                    attending this year&apos;s Spongia competition,
+                                    so stay tuned for a new game!
                                 </p>
                             }
                             img="/spongia-2021.jpg"
@@ -124,8 +124,9 @@ const Home: NextPage = () => {
                 <section className="contact">
                     <h1>Contact</h1>
                     <p>You can contact us by email:</p>
-                    <p>contact@donuts.dev</p>
-                    <p>Also check out our social medias</p>
+                    <a href="mailto:contact@koblihy.sk">contact@koblihy.sk</a>
+
+                    <p>Also check out our social medias:</p>
                     <div className="socials">
                         <a
                             href="https://www.instagram.com/koblihy.sk/"
