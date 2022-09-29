@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                         />
                         <Member
                             name="Dominika Trudičová"
-                            photo="placeholder.svg"
+                            photo="dominika_trudicova.jpg"
                             role="Sound designer, graphic designer"
                             instagram="https://www.instagram.com/slady46/"
                         />
