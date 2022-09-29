@@ -20,22 +20,22 @@ const Member = ({
             <img src={"/members/" + photo} alt={name} className="photo" />
             <div className="socials">
                 {instagram != null ? (
-                    <a href={instagram} target="_blank" >
+                    <a href={instagram} target="_blank" rel="noreferrer" >
                         <img src="/icons/instagram.svg" />
                     </a>
                 ) : null}
                 {linkedin != null ? (
-                    <a href={linkedin} target="_blank" >
+                    <a href={linkedin} target="_blank" rel="noreferrer" >
                         <img src="/icons/linkedin.svg" />
                     </a>
                 ) : null}
                 {github != null ? (
-                    <a href={github} target="_blank" >
+                    <a href={github} target="_blank" rel="noreferrer" >
                         <img src="/icons/github.svg" />
                     </a>
                 ) : null}
                 {web != null ? (
-                    <a href={web} target="_blank" >
+                    <a href={web} target="_blank" rel="noreferrer" >
                         <img src="/icons/web.svg" />
                     </a>
                 ) : null}

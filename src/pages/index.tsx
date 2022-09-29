@@ -80,6 +80,7 @@ const Home: NextPage = () => {
                                 <a
                                     href="https://drive.google.com/drive/u/0/folders/1wbkm36IIZ5Osd9qkIYSDuHy-YBZM7PM3"
                                     target="_blank"
+                                    rel="noreferrer"
                                     className="button"
                                 >
                                     <span>Download game</span>
@@ -98,13 +99,14 @@ const Home: NextPage = () => {
                                     <a
                                         href="https://www.smnd.sk/mikey/PHP/spongia/spongia_2021/index.php"
                                         target="_blank"
+                                        rel="noreferrer"
                                     >
                                         A game development competition
                                     </a>
                                     , held in our school in Bratislava (School
                                     for Exceptionally Gifted Children). We won
                                     3rd place in the year 2020. We are also
-                                    attending this year's Spongia competition.
+                                    attending this year&apos;s Spongia competition.
                                     Stay tuned for a new game!
                                 </p>
                             }
@@ -121,12 +123,14 @@ const Home: NextPage = () => {
                         <a
                             href="https://www.instagram.com/koblihy.sk/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <img src="/icons/instagram.svg" />
                         </a>
                         <a
                             href="https://www.linkedin.com/company/koblihy"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <img src="/icons/linkedin.svg" />
                         </a>
