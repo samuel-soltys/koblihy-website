@@ -94,7 +94,7 @@ const Home: NextPage = () => {
                                     />
                                 </a>
                             }
-                            img="/bob-musical-adventures-screen.png"
+                            img="/bob-musical-adventures-screen.jpg"
                         />
                     </section>
                     <section className="competitions">
