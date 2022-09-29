@@ -85,13 +85,14 @@
 
 @media only screen and (max-width: $breakpoint-tablet) {
     .header {
-		padding: 0 40px 5px 40px;
+		padding: 0 40px;
 		.mobile-menu { display: block; }
         .links { display: none; }
+		.mobile-overlay { box-shadow: none; }
+		box-shadow: none;
 	}
 }
 @media only screen and (max-width: $breakpoint-mobile) {
 	.header { height: 80px;}
 	.mobile-overlay { top: calc(-100vh + 80px); }
-	.header, .mobile-overlay { box-shadow: inset 0px -7px 0px rgba(0, 0, 0, 0.2); }
 }
