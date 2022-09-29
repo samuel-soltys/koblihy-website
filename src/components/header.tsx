@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import useWindowDimensions from "../useWindowDimenstions";
 
 const Header = () => {
     const [position, setPosition] = useState(0);
@@ -9,25 +8,44 @@ const Header = () => {
     const [loadingFinished, setloadingFinished] = useState(false);
     const cls = visible ? "visible" : "hidden";
 
-    // Hiding desktop menu on scroll
+    // Setting visibility after loading but 100ms before finishing loading animation
+    setTimeout(() => {
+        setVisible(true);
+        setloadingFinished(true);
+    }, 4200);
+
     useEffect(() => {
-        const handleScroll = () => {
-            let moving = window.pageYOffset;
-            if (
-                position > moving ||
-                position < 10 ||
-                window.innerWidth <= 1024
-            ) {
-                setVisible(true);
+        if (loadingFinished) {
+            const handleScroll = () => {
+                let moving = window.pageYOffset;
+                if (
+                    position > moving ||
+                    position < 10 ||
+                    window.innerWidth <= 1024
+                ) {
+                    setVisible(true);
+                } else {
+                    setVisible(false);
+                }
+                setPosition(moving);
+            };
+
+            // Hiding menu when resizing window after loading
+            const mobileoverlay = document.getElementsByClassName(
+                "mobile-overlay"
+            )[0] as HTMLDivElement;
+            if (visible && window.innerWidth < 1024) {
+                mobileoverlay.style.display = "grid";
             } else {
-                setVisible(false);
+                mobileoverlay.style.display = "none";
             }
-            setPosition(moving);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+
+            // Adding scroll listener
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+                window.removeEventListener("scroll", handleScroll);
+            };
+        }
     });
     // Turn off scroll for mobile menu
     useEffect(() => {
@@ -40,28 +58,6 @@ const Header = () => {
             }
         }
     }, [menu]);
-
-    // Setting visibality after loading but 100ms before finishing
-    useEffect(() => {
-        setTimeout(() => {
-            setVisible(true);
-            setloadingFinished(true);
-        }, 4200);
-    }, []);
-
-    // Hiding menu when resizing window after loading
-    useEffect(() => {
-        if (loadingFinished) {
-            const mobileoverlay = document.getElementsByClassName(
-                "mobile-overlay"
-            )[0] as HTMLDivElement;
-            if (visible && window.innerWidth < 1024) {
-                mobileoverlay.style.display = "grid";
-            } else {
-                mobileoverlay.style.display = "none";
-            }
-        }
-    });
 
     const HeaderLink = ({ id, label }: { id: string; label: string }) => {
         return (
