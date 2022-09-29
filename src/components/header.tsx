@@ -9,10 +9,12 @@ const Header = () => {
     const cls = visible ? "visible" : "hidden";
 
     // Setting visibility after loading but 100ms before finishing loading animation
-    setTimeout(() => {
-        setVisible(true);
-        setloadingFinished(true);
-    }, 4200);
+    useEffect(() => {
+        setTimeout(() => {
+            setVisible(true);
+            setloadingFinished(true);
+        }, 4200);
+    }, [])
 
     useEffect(() => {
         if (loadingFinished) {

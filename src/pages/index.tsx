@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                     <section className="games">
                         <h1>Games</h1>
                         <InfoBlock
-                            headline="Bob’s musical donut adventures"
+                            headline="Bob's musical donut adventures"
                             text={
                                 <p>
                                     A side-scrolling game with pretty parallax
