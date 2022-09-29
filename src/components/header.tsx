@@ -48,7 +48,7 @@ const Header = () => {
             setloadingFinished(true);
         }, 4200);
     }, []);
-    
+
     // Hiding menu when resizing window after loading
     useEffect(() => {
         if (loadingFinished) {
@@ -81,7 +81,7 @@ const Header = () => {
 
     return (
         <div className={"header " + cls}>
-            <img src="logo.svg" className="logo" />
+            <img src="logo.svg" className="logo" alt="Koblihy logo" />
             <div className="links">
                 <HeaderLink id="team" label="Team" />
                 <HeaderLink id="games" label="Games" />

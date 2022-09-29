@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                         </p>
                     </div>
                     <div className="illustration">
-                        <img src="donut-bg.svg" />
+                        <img src="donut-bg.svg" alt="Donut Illustration" />
                     </div>
                 </section>
                 <section className="team">
@@ -49,7 +49,11 @@ const Home: NextPage = () => {
                             role="Sound designer, graphic designer"
                             instagram="https://www.instagram.com/slady46/"
                         />
-                        <img className="illustration" src="donut-bg.svg" />
+                        <img
+                            className="illustration"
+                            src="donut-bg.svg"
+                            alt="Donut Illustration"
+                        />
                         <Member
                             name="Silvia Katlovská"
                             photo="silvia_katlovska.jpg"
@@ -84,7 +88,10 @@ const Home: NextPage = () => {
                                     className="button"
                                 >
                                     <span>Download game</span>
-                                    <img src="/icons/windows.svg" />
+                                    <img
+                                        src="/icons/windows.svg"
+                                        alt="Windows logo"
+                                    />
                                 </a>
                             }
                             img="/bob-musical-adventures-screen.png"
@@ -106,8 +113,8 @@ const Home: NextPage = () => {
                                     , held in our school in Bratislava (School
                                     for Exceptionally Gifted Children). We won
                                     3rd place in the year 2020. We are also
-                                    attending this year&apos;s Spongia competition.
-                                    Stay tuned for a new game!
+                                    attending this year&apos;s Spongia
+                                    competition. Stay tuned for a new game!
                                 </p>
                             }
                             img="/spongia-2021.jpg"
@@ -125,14 +132,20 @@ const Home: NextPage = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <img src="/icons/instagram.svg" />
+                            <img
+                                src="/icons/instagram.svg"
+                                alt="Koblihy Instagram"
+                            />
                         </a>
                         <a
                             href="https://www.linkedin.com/company/koblihy"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <img src="/icons/linkedin.svg" />
+                            <img
+                                src="/icons/linkedin.svg"
+                                alt="Koblihy LinkedIn"
+                            />
                         </a>
                     </div>
                 </section>
