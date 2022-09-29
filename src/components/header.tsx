@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 
 const Header = () => {
@@ -7,12 +7,16 @@ const Header = () => {
     const [menu, setMenu] = useState(false);
     const [loadingFinished, setloadingFinished] = useState(false);
     const cls = visible ? "visible" : "hidden";
+    const mobileoverlay = useRef<HTMLDivElement>(null);
 
     // Setting visibility after loading but 100ms before finishing loading animation
-    setTimeout(() => {
-        setVisible(true);
-        setloadingFinished(true);
-    }, 4200);
+    useEffect(() => {
+        setTimeout(() => {
+            setVisible(true);
+            setloadingFinished(true);
+            setMobileHeader();
+        }, 4200);
+    }, []);
 
     useEffect(() => {
         if (loadingFinished) {
@@ -30,20 +34,32 @@ const Header = () => {
                 setPosition(moving);
             };
 
-            // Hiding menu when resizing window after loading
-            const mobileoverlay = document.getElementsByClassName(
-                "mobile-overlay"
-            )[0] as HTMLDivElement;
-            if (visible && window.innerWidth < 1024) {
-                mobileoverlay.style.display = "grid";
-            } else {
-                mobileoverlay.style.display = "none";
-            }
-
             // Adding scroll listener
             window.addEventListener("scroll", handleScroll);
             return () => {
                 window.removeEventListener("scroll", handleScroll);
+            };
+        }
+    });
+
+    // Hiding menu when resizing and after loading
+    const setMobileHeader = () => {
+        if (window.innerWidth < 1024) {
+            // mobileoverlay.current!.style.display = "grid";
+            mobileoverlay.current!.style.top = `${
+                (window.innerWidth < 768 ? 80 : 100) -
+                window.innerHeight
+            }px`;
+        } else {
+            mobileoverlay.current!.style.top = "-100vh"
+        }
+    };
+    useEffect(() => {
+        if (loadingFinished) {
+            // Adding resize listener
+            window.addEventListener("resize", setMobileHeader);
+            return () => {
+                window.removeEventListener("resize", setMobileHeader);
             };
         }
     });
@@ -53,8 +69,12 @@ const Header = () => {
             const html = document.querySelector("html");
             if (menu) {
                 if (html) html.style.overflowY = "hidden";
+                mobileoverlay.current!.style.top = "0px";
             } else {
                 if (html) html.style.overflowY = "scroll";
+                mobileoverlay.current!.style.top = `${
+                    (window.innerWidth < 768 ? 80 : 100) - window.innerHeight
+                }px`;
             }
         }
     }, [menu]);
@@ -95,7 +115,7 @@ const Header = () => {
                     <div className={menu ? "toggle" : ""} id="bar3"></div>
                 </div>
             </div>
-            <div className={menu ? "mobile-overlay toggle" : "mobile-overlay"}>
+            <div className={menu ? "mobile-overlay toggle" : "mobile-overlay"} ref={mobileoverlay}>
                 <HeaderLink id="team" label="Team" />
                 <HeaderLink id="games" label="Games" />
                 <HeaderLink id="competitions" label="Competition" />
