@@ -68,11 +68,19 @@ const Home: NextPage = () => {
                         <h1>Games</h1>
                         <InfoBlock
                             headline="Bob musical adventures"
-                            text="A side-scrolling game with pretty parallax scrolling backgrounds and obstacles which are synchronized to music and rhythm. Listen carefully to finish the 3 levels."
+                            text={
+                                <p>
+                                    A side-scrolling game with pretty parallax
+                                    scrolling backgrounds and obstacles which
+                                    are synchronized to music and rhythm. Listen
+                                    carefully to finish the 3 levels.
+                                </p>
+                            }
                             button={
                                 <a
                                     href="https://drive.google.com/drive/u/0/folders/1wbkm36IIZ5Osd9qkIYSDuHy-YBZM7PM3"
                                     target="_blank"
+                                    className="button"
                                 >
                                     <span>Download game</span>
                                     <img src="/icons/windows.svg" />
@@ -85,7 +93,22 @@ const Home: NextPage = () => {
                         <h1>Competitions</h1>
                         <InfoBlock
                             headline="Spongia 2O21"
-                            text="A game development competition, held in our school in Bratislava (School for Exceptionally Gifted Children). We won 3rd place in the year 2020. We are also attending this year's Spongia competition. Stay tuned for a new game!"
+                            text={
+                                <p>
+                                    <a
+                                        href="https://www.smnd.sk/mikey/PHP/spongia/spongia_2021/index.php"
+                                        target="_blank"
+                                    >
+                                        A game development competition
+                                    </a>
+                                    , held in our school in Bratislava (School
+                                    for Exceptionally Gifted Children). We won
+                                    3rd place in the year 2020. We are also
+                                    attending this year's Spongia competition.
+                                    Stay tuned for a new game!
+                                </p>
+                            }
+                            img="/spongia-2021.jpg"
                         />
                     </section>
                 </div>
@@ -95,10 +118,16 @@ const Home: NextPage = () => {
                     <p>contact@donuts.dev</p>
                     <p>Also check out our social medias</p>
                     <div className="socials">
-                        <a href="https://www.instagram.com/koblihy.sk/" target="_blank">
+                        <a
+                            href="https://www.instagram.com/koblihy.sk/"
+                            target="_blank"
+                        >
                             <img src="/icons/instagram.svg" />
                         </a>
-                        <a href="https://www.linkedin.com/company/koblihy" target="_blank">
+                        <a
+                            href="https://www.linkedin.com/company/koblihy"
+                            target="_blank"
+                        >
                             <img src="/icons/linkedin.svg" />
                         </a>
                     </div>

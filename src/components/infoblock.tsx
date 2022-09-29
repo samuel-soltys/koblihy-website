@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 const InfoBlock = ({
     headline,
     text,
@@ -5,7 +7,7 @@ const InfoBlock = ({
     button,
 }: {
     headline: string;
-    text: string;
+    text: ReactElement;
     img?: string;
     button?: JSX.IntrinsicElements["a"];
 }) => {
@@ -13,7 +15,7 @@ const InfoBlock = ({
         <div className="infoblock">
             <div className="text">
                 <h2>{headline}</h2>
-                <p>{text}</p>
+                {text}
                 { button != null ? <>{button}</> : <></> }
             </div>
             { img != null ? <img src={img} alt={headline} /> : <img src="img-placeholder.svg" />}
