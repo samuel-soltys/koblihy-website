@@ -1,15 +1,18 @@
 import "../scss/main.scss";
 import type { AppProps } from "next/app";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }: AppProps) {
-    const { pathname } = useRouter();
+    // const { pathname } = useRouter();
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         window.scrollTo(0, 0);
+    //     }, 20);
+    // }, [pathname]);
     useEffect(() => {
-        setTimeout(() => {
-            window.scrollTo(0, 0);
-        }, 20);
-    }, [pathname]);
+        window.history.scrollRestoration = "manual";
+    }, []);
 
     return <Component {...pageProps} />;
 }
