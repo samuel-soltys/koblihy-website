@@ -3,9 +3,9 @@ import type { AppProps } from "next/app";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
-    useEffect(() => {
+    if (typeof window !== "undefined") {
         window.scrollTo(0, 0);
-    }, []);
+    }
 
     return <Component {...pageProps} />;
 }
