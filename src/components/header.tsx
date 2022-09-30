@@ -14,7 +14,7 @@ const Header = () => {
             setVisible(true);
             setloadingFinished(true);
         }, 4200);
-    }, [])
+    }, []);
 
     useEffect(() => {
         if (loadingFinished) {

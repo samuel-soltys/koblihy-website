@@ -112,8 +112,8 @@ const Home: NextPage = () => {
                                     , held in our school in Bratislava (School
                                     for Exceptionally Gifted Children). We won
                                     3rd place in the year 2021. We are also
-                                    attending this year&apos;s Spongia competition,
-                                    so stay tuned for a new game!
+                                    attending this year&apos;s Spongia
+                                    competition, so stay tuned for a new game!
                                 </p>
                             }
                             img="/spongia-2021.jpg"
