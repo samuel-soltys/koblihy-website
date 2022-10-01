@@ -5,6 +5,7 @@ import "@fontsource/quicksand";
 import Member from "../components/member";
 import InfoBlock from "../components/infoblock";
 import Head from "next/head";
+import Script from 'next/script'
 
 const Home: NextPage = () => {
     return (
@@ -59,6 +60,20 @@ const Home: NextPage = () => {
 
                 <title>Koblihy&nbsp;-&nbsp;game developers</title>
             </Head>
+            {/* Google Tag Manager */}
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-CVX2T07BGE"
+                strategy="afterInteractive"
+            />            
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+    
+                gtag('config', 'G-CVX2T07BGE');
+                `}
+            </Script>
             <Loading />
             <div className="content">
                 <Header />
