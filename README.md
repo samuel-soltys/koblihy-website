@@ -9,7 +9,6 @@
 </p>
 <p align="center">
     <img src="https://therealsujitk-vercel-badge.vercel.app/?app=koblihy.sk"/>
-    <img src="https://img.shields.io/tokei/lines/github/samuel-soltys/koblihy-website">
 </p>
 
 ![demo](https://raw.githubusercontent.com/samuel-soltys/koblihy-website/main/public/demo.jpg)
