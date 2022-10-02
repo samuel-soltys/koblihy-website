@@ -1,7 +1,3 @@
-<style>
-    a { color: #EE66A3; }
-    a:hover { color: #E3B381; }
-</style>
 <div align="center">
     <img alt="Logo" src="https://raw.githubusercontent.com/samuel-soltys/koblihy-website/main/public/donut.svg" width="100" />
 </div>
