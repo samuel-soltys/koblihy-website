@@ -32,9 +32,9 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| White          | ![#FFFFFF](https://via.placeholder.com/10/ffffff?text=+) `#ffffff` |
-| Mine Shaft     | ![#373737](https://via.placeholder.com/10/373737?text=+) `#373737` |
-| Brilliant Rose | ![#EE66A3](https://via.placeholder.com/10/EE66A3?text=+) `#EE66A3` |
-| Mulberry       | ![#BE5282](https://via.placeholder.com/10/be5282?text=+) `#BE5282` |
-| Gold Sand      | ![#E3B381](https://via.placeholder.com/10/e3b381?text=+) `#E3B381` |
-| Muddy Waters   | ![#B78E67](https://via.placeholder.com/10/b78e67?text=+) `#B78E67` |
+| White          | ![#FFFFFF](https://via.placeholder.com/10/ffffff/ffffff.png) `#ffffff` |
+| Mine Shaft     | ![#373737](https://via.placeholder.com/10/373737/373737.png) `#373737` |
+| Brilliant Rose | ![#EE66A3](https://via.placeholder.com/10/EE66A3/EE66A3.png) `#EE66A3` |
+| Mulberry       | ![#BE5282](https://via.placeholder.com/10/be5282/be5282.png) `#BE5282` |
+| Gold Sand      | ![#E3B381](https://via.placeholder.com/10/e3b381/e3b381.png) `#E3B381` |
+| Muddy Waters   | ![#B78E67](https://via.placeholder.com/10/b78e67/b78e67.png) `#B78E67` |
