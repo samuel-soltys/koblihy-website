@@ -8,7 +8,7 @@
     Koblihy website <a href="https://koblihy.sk" target="_blank">koblihy.sk</a> built with <a href="https://www.nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
 </p>
 <p align="center">
-    <img src="https://vercelbadge.vercel.app/api/samuel-soltys/koblihy-website)" alt="Vercel Status" />
+    <img src="https://therealsujitk-vercel-badge.vercel.app/?app=koblihy.sk"/>
 </p>
 
 ![demo](https://raw.githubusercontent.com/samuel-soltys/koblihy-website/main/public/demo.jpg)
