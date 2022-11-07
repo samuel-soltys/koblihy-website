@@ -136,6 +136,32 @@ const Home: NextPage = () => {
                     <section className="games">
                         <h1>Games</h1>
                         <InfoBlock
+                            headline="Emperors Dynasty"
+                            text={
+                                <p>
+                                    A game about the rise and fall of an empire.
+                                    You start as a small village and try to expand
+                                    your territory and survive the most attacks from enemies as you can.
+                                    You can build your own buildings and defend your territory. 
+                                </p>
+                            }
+                            button={
+                                <a
+                                    href="https://drive.google.com/drive/folders/1K-A34sT0nvOGID0DhCTZAiMNAMHcvfW9?usp=sharing"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="button"
+                                >
+                                    <span>Download game</span>
+                                    <img
+                                        src="/icons/windows.svg"
+                                        alt="Windows logo"
+                                    />
+                                </a>
+                            }
+                            img="/emperors-dynasty.png"
+                        />
+                        <InfoBlock
                             headline="Bob's musical donut adventures"
                             text={
                                 <p>
