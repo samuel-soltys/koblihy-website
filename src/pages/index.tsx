@@ -136,6 +136,36 @@ const Home: NextPage = () => {
                     <section className="games">
                         <h1>Games</h1>
                         <InfoBlock
+                            headline="Dream World"
+                            text={
+                                <p>
+                                    Dream World is a fun point-and-click
+                                    adventure game that puts players in an
+                                    interesting story as a fallen human
+                                    exploring a mysterious fantasy world. Meet various
+                                    in-game characters, each with their own
+                                    stories, as you solve complicated puzzles and
+                                    challenges to move forward in the exciting story.
+                                </p>
+                            }
+                            button={
+                                <a
+                                    href="https://drive.google.com/drive/folders/1X_Sb7yDxbdMcss8bNR1ft48Zxu5EreUj"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="button"
+                                >
+                                    <span>Download game</span>
+                                    <img
+                                        src="/icons/windows.svg"
+                                        alt="Windows logo"
+                                    />
+                                </a>
+                            }
+                            img="/dream-world.jpg"
+                        />
+
+                        <InfoBlock
                             headline="Emperors Dynasty"
                             text={
                                 <p>
