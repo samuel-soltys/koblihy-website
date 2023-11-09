@@ -83,8 +83,9 @@ section { margin-bottom: 15vw; }
 			.photo {
 				border-radius: 100%;
 				width: 100%;
-				opacity: 0.8;
+				opacity: 0.85;
 			}
+			&:first-of-type .photo { opacity: 1; }
 			.name {
 				@extend .font-weight-600;
 				@extend .font-l;
